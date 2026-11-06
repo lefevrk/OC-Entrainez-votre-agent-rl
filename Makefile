@@ -2,7 +2,7 @@
 # GLOBALS                                                                       #
 #################################################################################
 
-PROJECT_NAME = oc-entrainez-votre-agent-rl
+PROJECT_NAME = OC-Entrainez-votre-agent-rl
 PYTHON_VERSION = 3.12
 PYTHON_INTERPRETER = python3
 

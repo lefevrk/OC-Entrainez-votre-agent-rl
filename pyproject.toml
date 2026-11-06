@@ -22,6 +22,8 @@ dependencies = [
   "matplotlib",
   "python-dotenv",
   "scikit-learn",
+  "gymnasium>=1.4.0",
+  "stable-baselines3>=2.9.2",
 ]
 requires-python = ">=3.12"
 

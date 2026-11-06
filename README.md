@@ -9,15 +9,15 @@
   <p align="center">
     Entraînement d'un agent d'apprentissage par renforcement.
     <br />
-    <a href="https://lefevrk.github.io/oc-entrainez-votre-agent-rl/"><strong>Explorer la doc »</strong></a>
+    <a href="https://lefevrk.github.io/OC-Entrainez-votre-agent-rl/"><strong>Explorer la doc »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/lefevrk/oc-entrainez-votre-agent-rl/issues/new?labels=bug&template=bug_report.md">Signaler un bug</a>
+    <a href="https://github.com/lefevrk/OC-Entrainez-votre-agent-rl/issues/new?labels=bug&template=bug_report.md">Signaler un bug</a>
     &middot;
-    <a href="https://github.com/lefevrk/oc-entrainez-votre-agent-rl/issues/new?labels=enhancement&template=feature_request.md">Proposer une fonctionnalité</a>
+    <a href="https://github.com/lefevrk/OC-Entrainez-votre-agent-rl/issues/new?labels=enhancement&template=feature_request.md">Proposer une fonctionnalité</a>
   </p>
 
-  [![Docs](https://github.com/lefevrk/oc-entrainez-votre-agent-rl/actions/workflows/docs.yml/badge.svg)](https://github.com/lefevrk/oc-entrainez-votre-agent-rl/actions/workflows/docs.yml)
+  [![Docs](https://github.com/lefevrk/OC-Entrainez-votre-agent-rl/actions/workflows/docs.yml/badge.svg)](https://github.com/lefevrk/OC-Entrainez-votre-agent-rl/actions/workflows/docs.yml)
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -57,8 +57,8 @@ Ce dépôt contient le projet *Entraînez votre agent RL* du parcours OpenClassr
 
 1. Cloner le dépôt
    ```bash
-   git clone https://github.com/lefevrk/oc-entrainez-votre-agent-rl.git
-   cd oc-entrainez-votre-agent-rl
+   git clone https://github.com/lefevrk/OC-Entrainez-votre-agent-rl.git
+   cd OC-Entrainez-votre-agent-rl
    ```
 
 2. Installer les dépendances

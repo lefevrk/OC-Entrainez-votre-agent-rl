@@ -1,9 +1,9 @@
 site_name: Entraînez votre agent RL
 site_description: Entraînement d'un agent d'apprentissage par renforcement.
 site_author: LEFEVRE Kilian
-site_url: https://lefevrk.github.io/oc-entrainez-votre-agent-rl/
-repo_url: https://github.com/lefevrk/oc-entrainez-votre-agent-rl
-repo_name: lefevrk/oc-entrainez-votre-agent-rl
+site_url: https://lefevrk.github.io/OC-Entrainez-votre-agent-rl/
+repo_url: https://github.com/lefevrk/OC-Entrainez-votre-agent-rl
+repo_name: lefevrk/OC-Entrainez-votre-agent-rl
 
 hooks:
   - hooks.py
