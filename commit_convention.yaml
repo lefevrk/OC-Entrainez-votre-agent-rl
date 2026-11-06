@@ -1,0 +1,26 @@
+scopes:
+  - notebooks: exercise and mission notebooks (Colab/Jupyter)
+  - env: Gymnasium environments (CartPole, FrozenLake, LunarLander-v3)
+  - modeling: training, hyperparameters, evaluation, saving (src/rl_pilot/modeling)
+  - qlearning: hand-written Q-table and DQN (exercises 2 and 3)
+  - api: pilot API (FastAPI, /play endpoint)
+  - gui: graphical interface to visualize a played episode (Streamlit/Gradio)
+  - dashboard: agent performance monitoring dashboard
+  - data: dataset.py, features.py and data/ folder
+  - plots: charts and figures (plots.py, reports/figures)
+  - config: config.py, pyproject, Makefile, pre-commit
+  - docs: documentation (mkdocs, README, conventions)
+  - tests: pytest tests
+  - deps: dependencies (uv, uv.lock)
+  - ci: GitHub Actions workflows
+
+commit_types:
+  - feat: new feature
+  - fix: bug fix
+  - refactor: code change with no behavior change
+  - test: add or update tests
+  - docs: documentation
+  - build: build system and dependencies
+  - chore: maintenance
+
+header_max_length: 72
