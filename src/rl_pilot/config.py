@@ -1,10 +1,7 @@
-import os
 from pathlib import Path
-import random
 
 from dotenv import load_dotenv
 from loguru import logger
-import numpy as np
 
 # Load environment variables from .env file if it exists
 load_dotenv()
@@ -23,10 +20,10 @@ MODELS_DIR = PROJ_ROOT / "models"
 REPORTS_DIR = PROJ_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 
-# Constantes partagées par plusieurs étapes du projet.
+# Constants shared by several steps of the project.
 SEED = 42
 
-# Étiquette qui remplace la racine du projet dans les sorties affichées.
+# Labels that replace the project root and home directory in displayed output.
 SAFE_ROOT_LABEL = "<PROJECT_ROOT>"
 SAFE_HOME_LABEL = "~"
 
@@ -42,35 +39,16 @@ except ModuleNotFoundError:
 
 
 def mask_path(value: str | Path) -> str:
-    """Remplace les chemins personnels par des étiquettes neutres.
+    """Replace personal paths with neutral labels.
 
-    La racine du projet devient `<PROJECT_ROOT>` et le dossier personnel `~`,
-    pour qu'aucun chemin local n'apparaisse dans les sorties de notebook.
+    The project root becomes `<PROJECT_ROOT>` and the home directory becomes
+    `~`, so that no local path appears in notebook outputs.
 
     Args:
-        value: Chemin (ou texte contenant des chemins) à masquer.
+        value: Path (or text containing paths) to mask.
 
     Returns:
-        Le texte avec la racine du projet et le dossier personnel masqués.
+        The text with the project root and home directory masked.
     """
     masked = str(value).replace(str(PROJ_ROOT), SAFE_ROOT_LABEL)
     return masked.replace(str(Path.home()), SAFE_HOME_LABEL)
-
-
-def set_seed(seed: int = SEED) -> None:
-    """Fixe les graines de `random` et NumPy, et de PyTorch s'il est installé.
-
-    PyTorch n'est importé que s'il est installé : le module reste léger pour
-    les étapes qui n'en ont pas besoin.
-
-    Args:
-        seed: Graine commune.
-    """
-    random.seed(seed)
-    np.random.seed(seed)
-    os.environ["PYTHONHASHSEED"] = str(seed)
-    try:
-        import torch
-    except ModuleNotFoundError:
-        return
-    torch.manual_seed(seed)

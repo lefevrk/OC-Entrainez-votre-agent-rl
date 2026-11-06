@@ -1,6 +1,6 @@
 # Module `rl_pilot.config`
 
-Chemins, paramètres communs et outils de reproductibilité, centralisés pour que les notebooks et les modules les partagent.
+Chemins et paramètres communs, centralisés pour que les notebooks et les modules les partagent.
 
 ## Chemins
 
@@ -19,14 +19,10 @@ Chemins, paramètres communs et outils de reproductibilité, centralisés pour q
 
 | Nom | Valeur | Rôle |
 |---|---|---|
-| `SEED` | `42` | Graine de tous les algorithmes aléatoires |
+| `SEED` | `42` | Valeur de graine de référence (son application aux générateurs aléatoires reste à la charge du développeur) |
 
 ## Sorties sans chemin personnel
 
 Les sorties de notebook ne doivent révéler aucun chemin de la machine de l'auteur. `mask_path` remplace la racine du projet par `<PROJECT_ROOT>` et le dossier personnel par `~` (constantes `SAFE_ROOT_LABEL` et `SAFE_HOME_LABEL`).
 
 ::: rl_pilot.config.mask_path
-
-## Reproductibilité
-
-::: rl_pilot.config.set_seed

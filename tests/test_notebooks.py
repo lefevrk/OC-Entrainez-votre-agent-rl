@@ -6,7 +6,7 @@ import pytest
 from rl_pilot.config import PROJ_ROOT
 
 NOTEBOOKS = sorted((PROJ_ROOT / "notebooks").glob("*.ipynb"))
-# Dossier personnel de n'importe quel système (macOS, Linux, Windows).
+# Home directory on any system (macOS, Linux, Windows).
 HOME_PATH = re.compile(r"(?:/Users/|/home/|[A-Za-z]:\\\\Users\\\\)[\w.-]+")
 
 
